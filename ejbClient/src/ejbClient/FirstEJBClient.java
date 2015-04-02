@@ -133,6 +133,5 @@ public class FirstEJBClient {
 			e.printStackTrace();
 		}
 		
-		System.out.println("123");
 	}
 }
