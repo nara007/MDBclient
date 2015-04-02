@@ -62,11 +62,9 @@ public class FirstEJBClient {
 //		System.out.println(mybean.getResult());
 		
 		
-		System.out.println("abc");
 		QueueConnectionFactory fac=null;
 		try {
 			fac=(QueueConnectionFactory) context.lookup("jms/RemoteConnectionFactory");
-			System.out.println("abc");
 		} catch (NamingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -75,7 +73,6 @@ public class FirstEJBClient {
 		QueueConnection conn=null;
 		try {
 			conn= fac.createQueueConnection("xiaoqiang","123");
-			System.out.println("def");
 		} catch (JMSException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -133,6 +130,5 @@ public class FirstEJBClient {
 			e.printStackTrace();
 		}
 		
-		System.out.println("123");
 	}
 }
