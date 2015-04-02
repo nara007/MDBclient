@@ -125,6 +125,7 @@ public class FirstEJBClient {
 		}
 		try {
 			conn.close();
+			System.out.println("close connection...");
 		} catch (JMSException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
