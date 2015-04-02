@@ -112,6 +112,7 @@ public class FirstEJBClient {
 		
 		try {
 			sender.send(msg);
+			System.out.println("send message...");
 		} catch (JMSException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
