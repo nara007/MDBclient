@@ -122,6 +122,7 @@ public class FirstEJBClient {
 		
 		try {
 			session.close();
+			System.out.println("session connection...");
 		} catch (JMSException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
